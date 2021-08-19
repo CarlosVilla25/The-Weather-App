@@ -1,3 +1,3 @@
 # The-Weather-App
 
-![screenshot](assets\img\Captura.PNG);
+![screenshot](assets/img/Captura.PNG);
