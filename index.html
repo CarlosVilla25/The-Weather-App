@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>The Weather App</h1>
+    <div class="container-card-input">
+      <div class="card-container">
+        <div class="card-img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png"
+            alt="Flag" id="cardImg">
+        </div>
+        <div class="card-body">
+          <div id="countryName" class="card-country country-name">Country Name</div>
+          <div id="countryTemp" class="card-country country-temp">Country Temp</div>
+          <div id="countryTempMaxMin" class="card-country country-temp-max-min"><span>Temp max</span> | <span>Temp min</span></div>
+          <div id="countryDescription" class="card-country country-description">Country Description</div>
+        </div>
+      </div>
+        <div class="input">
+          <label for="inputCountries">Choose a country</label>
+          <input list="countries" id="inputCountries">
+          <!-- <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist> -->
+        </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/app.js" type="module"></script>
+</body>
+
+</html>

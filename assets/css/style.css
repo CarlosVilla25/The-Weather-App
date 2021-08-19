@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --white: #fff;
+  --whiteOp: rgba(255, 255, 255, 0.8);
+  --blackOp: rgb(0, 0, 0, 0.25);
+  --purpleOp: rgba(166, 83, 230, 0.7);
+  --blueOp: rgba(75, 129, 242, 0.7);
+}
+
+.container {
+  align-items: center;
+  background: url('../img/bg.png');
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  text-align: center;
+  text-shadow: 5px 5px 50px rgb(0 0 0 / 70%);
+  text-transform: uppercase;
+}
+
+.container-card-input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    var(--purpleOp) 0%,
+    var(--blueOp) 100%
+  );
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px var(--blackOp);
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  width: 600px;
+}
+
+.card-img {
+  align-items: center;
+  display: flex;
+  flex: 40%;
+  height: 100%;
+  justify-content: center;
+}
+
+.card-img img {
+  box-shadow: 5px 5px 22px rgb(0 0 0 / 60%);
+  margin-left: 3rem;
+  width: 150px;
+}
+
+.card-body {
+  align-items: center;
+  display: flex;
+  flex: 60%;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+.card-country {
+  padding: 15px 0;
+}
+
+.container-card-input .input {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+  padding: 2rem 0;
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 70%);
+  text-transform: uppercase;
+}
+
+.container-card-input input {
+  background: var(--whiteOp);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 10px 10px 25px rgb(0 0 0 / 25%);
+  height: 2rem;
+  letter-spacing: 0.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-card-input input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .container {
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .container h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1.3rem;
+    text-align: center;
+    text-shadow: 5px 5px 40px rgb(0 0 0 /80%);
+    text-transform: uppercase;
+  }
+
+  .card-container {
+    width: 250px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-container img {
+    margin: 0;
+  }
+
+  .card-body {
+    justify-content: flex-start;
+  }
+
+  .input label {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  .container-card-input input {
+    width: 12.5rem;
+    align-self: center;
+  }
+}
